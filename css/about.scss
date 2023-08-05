@@ -1,0 +1,74 @@
+// Import from the global folder
+@forward "global/body";
+@forward "global/footer";
+@forward "global/nav-menu";
+@forward "global/buttons";
+@forward "global/custom-mouse";
+@use "global/variables" as v;
+
+// ========================
+
+// Raw css start here 👇
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+  width: v.$size;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile_picture {
+  img {
+    border-radius: 100%;
+    width: 400px;
+  }
+}
+
+.information {
+  h1 {
+    font-size: 8rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+p {
+  font-size: 2rem;
+}
+
+.line {
+  // border-bottom: 1px solid rgb(230, 230, 230);
+  margin: 100px 0;
+}
+
+.about {
+  width: v.$size;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 100px;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.skill {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.my_skills{
+  padding: 20px 0;
+}

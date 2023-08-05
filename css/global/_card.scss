@@ -1,0 +1,82 @@
+@use "variables" as v;
+
+
+.active{
+    background-color: #357cff!important;
+    color: white;
+
+    .number{
+        color: white!important;
+    }
+
+    .t_buttons{
+        color: rgb(15, 15, 15)!important;
+        background-color: white!important;
+
+        &:hover{
+            background-color: rgba(15, 15, 15, 0.925)!important;
+            color: rgb(255, 255, 255)!important;
+        }
+    }
+}
+
+
+.pricing {
+  margin-top: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: v.$size;
+}
+
+.pricing_info {
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    margin: 20px auto;
+  }
+  p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.pricing_tabs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  margin: 100px 0px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 5px;
+
+  .number {
+    color: blue;
+  }
+  .title {
+    margin: 20px 0;
+    h4{
+        font-size: 22px;
+        margin: 5px 0;
+    }
+  }
+
+  .starts{
+    margin-bottom: 40px;
+    h2{
+        font-size: 2rem;
+    }
+  }
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}

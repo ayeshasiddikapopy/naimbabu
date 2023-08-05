@@ -1,0 +1,87 @@
+@forward "global/body";
+@forward "global/buttons";
+@forward "global/color";
+@forward "global/custom-mouse";
+@forward "global/fonts";
+@forward "global/nav-menu";
+@forward "global/footer";
+@use "global/variables" as v;
+
+main {
+  margin: 0 auto;
+  width: v.$size;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-gap: 70px;
+  margin-top: 300px;
+}
+
+.info {
+  width: 80%;
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+
+  .contact_element {
+    margin: 20px 0;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 10px 0;
+      border: 1px solid rgb(228, 228, 228);
+      padding: 20px;
+      border-radius: 5px;
+      span {
+        font-weight: 500;
+      }
+
+      a{
+        color: black;
+      }
+    }
+  }
+}
+
+form {
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  #data {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input,
+    textarea {
+      padding: 14px 15px;
+      border: 1px solid rgb(228, 228, 228);
+      border-radius: 2px;
+      &:focus{
+        outline: none;
+      }
+
+    }
+    
+    button{
+        padding: 15px 0;
+        background-color: rgba(223, 223, 223, 0.377);
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        border: none;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover{
+            background-color: rgba(15, 15, 15, 0.925);
+            color: white;
+        }
+      }
+  }
+}

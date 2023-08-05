@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+
+header {
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0.5s;
+    nav {
+        width: v.$size;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo_and_links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .links {
+                margin: 0 50px;
+
+                a {
+                    padding: 0 15px;
+                    color: rgb(65, 65, 65);
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+    background-color: rgba(255, 255, 255, 0.925);
+    padding: 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}

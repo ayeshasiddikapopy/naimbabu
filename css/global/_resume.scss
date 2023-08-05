@@ -1,0 +1,102 @@
+@use "variables" as v;
+
+#resume {
+    width: v.$size;
+    margin: 0px auto;
+    padding: 100px 0px;
+
+    .container {
+        background-color: white;
+        padding: 150px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 50px 0px;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+        }
+
+    .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .left_side {
+                h5 {
+                    font-size: 17px;
+                    color: rgb(161, 161, 161);
+                    font-weight: 400;
+                }
+            .devider {
+                    width: 400px;
+                    border-bottom: 1px solid rgb(231, 231, 231);
+                    margin: 20px 0px;
+                }
+
+            .first_work {
+                    margin-top: 50px;
+                    margin-bottom: 100px;
+                    h4 {
+                        font-size: 1.3rem;
+                        color: rgb(46, 46, 46);
+                        margin: 20px auto;
+                    }
+
+            p {
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin: 10px auto;
+                    }
+                }
+            }
+        }
+
+    // <============ Freelance Clients  ==============>
+
+    .clients {
+            h5 {
+                font-size: 17px;
+                color: rgb(161, 161, 161);
+                font-weight: 400;
+            }
+
+    .devider {
+                width: 100%;
+                border-bottom: 1px solid rgb(231, 231, 231);
+                margin: 20px 0px;
+            }
+
+    .clients_logos {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 100px;
+                img {
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+// <============ Skills  ==============>
+.skills {
+        h4 {
+            font-size: 1rem;
+            margin: 20px 0px;
+        }
+    }
+
+.tools {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 20px;
+        gap: 20px;
+        img {
+            width: 50px;
+        }
+    }
+}

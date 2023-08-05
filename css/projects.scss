@@ -1,0 +1,120 @@
+// Import from the global folder
+@forward "global/body";
+@forward "global/footer";
+@forward "global/nav-menu";
+@forward "global/buttons";
+@forward "global/custom-mouse";
+@use "global/variables" as v;
+
+main {
+  margin: 0 auto;
+  width: v.$size;
+}
+
+.info {
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 200px;
+  }
+
+  p {
+    margin: 20px 0;
+    width: 50%;
+  }
+}
+
+.wide_row {
+  display: flex;
+  align-items: center;
+  background-color: #e3eefc;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 5px;
+  padding: 150px 100px;
+
+  .project_info {
+    .info {
+      h2 {
+        font-size: 3rem;
+      }
+
+      span {
+        margin: 30px 0;
+        display: block;
+      }
+    }
+
+    a {
+      margin-top: 100px;
+      width: 30%;
+      padding: 20px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .image_section {
+    width: 50%;
+    img {
+      box-shadow: rgba(0, 0, 0, 0.466) -4px 9px 25px -6px;
+    }
+  }
+}
+
+.t_row {
+  display: grid;
+  grid-template-columns: 80% 20%;
+
+  &:first-child {
+    width: 70%;
+  }
+  .narrow_row {
+    display: flex;
+    align-items: center;
+    background-color: #e3eefc;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    border-radius: 5px;
+    padding: 80px;
+
+    .project_info {
+      .info {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        span {
+          margin: 30px 0;
+          display: block;
+        }
+      }
+
+      a {
+        width: 60%;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        span {
+          font-size: 16px;
+        }
+      }
+      
+    }
+    .image_section {
+        width: 60%;
+        margin-bottom: -130px;
+        img {
+          box-shadow: rgba(0, 0, 0, 0.466) -4px 9px 25px -6px;
+        }
+      }
+  }
+
+}

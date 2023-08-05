@@ -1,0 +1,36 @@
+@use "variables" as v;
+
+#hero {
+    display: flex;
+    width: v.$size;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+
+    .left_side {
+        h1 {
+            font-size: 4rem;
+        }
+
+    p {
+            font-size: v.$paragraph;
+            font-weight: 500;
+            width: 80%;
+            margin: 40px 0;
+        }
+
+    a {
+            width: 15%;
+            display: flex;
+        }
+    }
+
+.right_side {
+        img {
+            margin-bottom: -4px;
+            border-bottom: 1px solid black;
+        }
+    }
+}
